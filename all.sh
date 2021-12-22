@@ -1,6 +1,6 @@
 # !/bin/bash
 
-# Este arquivo serve para instalação de todos os scripts essenciais que uso no Linux
+echo Este arquivo serve para instalação de todos os scripts essenciais que uso no Linux
 
 # Update
 sudo apt-get update;
@@ -21,6 +21,7 @@ sudo apt update;
 sudo apt install php8.0 php8.0-intl php8.0-mysql php8.0-sqlite3 \
 	php8.0-gd php8.0-mbstring php8.0-xml php8.0-simplexml php8.0-dom \
 	php8.0-curl php8.0-zip;
+sudo update-rc.d apache2 disable;
 
 # Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');";
